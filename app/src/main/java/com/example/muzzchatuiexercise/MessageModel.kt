@@ -1,16 +1,26 @@
 package com.example.muzzchatuiexercise
 
-import java.time.LocalTime
+import android.os.Build
+import androidx.annotation.RequiresApi
+import java.util.Calendar
 
 class MessageModel {
     var message: String? = null;
-    var user: String? = null;
+    var user: Boolean? = null;
+    var time: Long? = null;
+
+
 
 
     constructor(){};
 
-    constructor(message: String?, user: String?, time: LocalTime){
+    //Message constructor
+    @RequiresApi(Build.VERSION_CODES.O)
+    constructor(message: String?, user: Boolean, time: Long){
         this.message = message;
         this.user = user;
+        this.time = time;
+
     }
+
 }

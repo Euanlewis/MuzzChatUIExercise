@@ -66,6 +66,7 @@
             android:background="@drawable/text_box_background"/>
 
         <ImageView
+            android:id="@+id/sendButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/baseline_send_24"
